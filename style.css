@@ -771,4 +771,13 @@ a {
    .header #menu-btn{
         display: inline-block;
     }
+
+    .header .search-form{
+        width: 90%;
+    }
+
+    .header .search-form.active{
+       width: 90%;
+   }
 }
+
