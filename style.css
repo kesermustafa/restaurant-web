@@ -146,7 +146,14 @@ a {
     width: 35rem;
     background-color: white;
     box-shadow: 0 20px 14px 0 rgb(0 0 0 / 75%);
+    right: -100%;
 }
+
+
+.header .cart-items-container.active{
+    right: 3rem;
+}
+
 
 .header .cart-items-container .cart-item{
     position: relative;
@@ -185,6 +192,11 @@ a {
     color: var(--black-color);
 }
 
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+    border-radius: unset;
+}
 
 #menu-btn{
     display: none;
@@ -723,7 +735,7 @@ a {
 }
 
 @media (max-width: 768px) {
-    #menu-btn{
+   .header #menu-btn{
         display: inline-block;
     }
 
@@ -751,4 +763,15 @@ a {
         font-size: 2rem;
     }
 
+}
+
+
+@media (max-width: 576px){
+    html{
+        font-size: 50%;
+    }
+
+   .header #menu-btn{
+        display: inline-block;
+    }
 }
